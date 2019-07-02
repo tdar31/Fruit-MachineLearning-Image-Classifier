@@ -2,7 +2,7 @@
 
 Fruit-MachineLearning-Image-Classifer
 
-~82% success rate identifying the correct fruit.  Planning on experimenting with different datasets to see if I can get cleaner data to help decrease error rate.
+Model currently has a ~82% success rate identifying the correct fruit.  Planning on experimenting with different datasets to see if I can get cleaner data to help decrease error rate as this has been a pretty glaring issue so far.
 
 Current classes:
 Apple 
