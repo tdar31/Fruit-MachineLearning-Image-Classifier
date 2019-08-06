@@ -23,11 +23,8 @@ function analyze() {
   el("analyze-button").innerHTML = "Analyzing...";
   var xhr = new XMLHttpRequest();
   var loc = window.location;
-  // xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`,
-  //   true);
-  xhr.open("POST", `https://sites.google.com/site/knowyourfruit/_/rsrc/1284636557816/know-your-apples/Apple%2002.jpg?height=362&width=400`,
+  xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`,
     true);
-    // https://sites.google.com/site/knowyourfruit/_/rsrc/1284636557816/know-your-apples/Apple%2002.jpg?height=362&width=400
   xhr.onerror = function() {
     alert(xhr.responseText);
   };

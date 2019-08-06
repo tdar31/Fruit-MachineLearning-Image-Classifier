@@ -11,9 +11,47 @@
     <body>
         <div>
             <div class="center">
-                <div class="title">Classify Fruit Images</div>
+                <div class="title">Fruit Image Classifer</div>
+                <h3>
+                    Try using images of Bananas, Pears or Grapes etc.
+                </h3>
+                <p class="modelDetails">
+                    Model currently has a ~82% success rate identifying the
+                    correct fruit using current training data. Current dataset
+                    are ~200 images per class taken from Google Images.
+                </p>
+
+                <p class="modelDetails">
+                    Current classes: Apple, Apricot, Avocado, Banana,
+                    Blackberry, Blueberry, Cantaloupe, Cherry, Cloudberry,
+                    Coconut, Cucumber, Date, Dragonfruit, Durian, Fig, Grape,
+                    Grapefruit, Honeyberry, Honeydew, Kiwifruit, Kumquat, Lemon,
+                    Lime, Mango, Orange, Papaya, Passionfruit, Peach, Pear,
+                    Plum, Pineapple, Pomegranante, Raspberry, Strawberry and
+                    Watermelon
+                </p>
+                <p class="notableIssues">
+                    <b>Notable issues with the current model</b>
+                </p>
                 <p>
-                    Use images of Bananas, Pears or Grapes etc.
+                    - Certain fruits that are very close in appearence (i.e
+                    Kumquat and Orange)
+                </p>
+                <p>
+                    - Fruits that come in different shades of color (i.e Green
+                    Apples and Red Apples)
+                </p>
+                <p>
+                    - Differenciating fruits that have been cut open versus pre
+                    harvested state (i.e unopened Honeydew and Cantaloupe versus
+                    when they are cut open)
+                </p>
+
+                <p>
+                    <a
+                        href="https://github.com/tdar31/Fruit-MachineLearning-Image-Classifer"
+                        >Github Repo</a
+                    >
                 </p>
                 <div class="content">
                     <div class="no-display">
@@ -31,12 +69,11 @@
                         type="button"
                         onclick="showPicker()"
                     >
-                        Select Image
+                        Select Local Image
                     </button>
                     <div class="upload-label">
                         <label id="upload-label">No file chosen</label>
                     </div>
-                    <input id="urlInputField"></input>
                     <div>
                         <img
                             id="image-picked"
