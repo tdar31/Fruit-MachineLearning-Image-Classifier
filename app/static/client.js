@@ -15,8 +15,6 @@ function showPicked(input) {
 }
 
 function analyze() {
-
-  var urlValue = document.getElementById('textbox_id').value
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length !== 1) alert("Please select a file to analyze!");
 
@@ -40,4 +38,3 @@ function analyze() {
   fileData.append("file", uploadFiles[0]);
   xhr.send(fileData);
 }
-
