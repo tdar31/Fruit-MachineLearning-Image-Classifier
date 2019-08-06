@@ -1,7 +1,7 @@
 body {
-    background-color: #fff;
+    background-color: #c5c5c5;
     background-image: url("../view/interlaced.png");
-    font-family: 'Blinker', sans-serif;
+    font-family: "Blinker", sans-serif;
 }
 
 .no-display {
@@ -44,7 +44,7 @@ body {
 button.choose-file-button {
     width: 200px;
     height: 40px;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: #ffffff;
     border: solid 1px #0b43bd;
     font-size: 13px;
@@ -55,7 +55,7 @@ button.analyze-button {
     width: 200px;
     height: 40px;
     border: solid 1px #0b43bd;
-    border-radius: 2px;
+    border-radius: 10px;
     background-color: #0b43bd;
     font-size: 13px;
     color: #ffffff;
@@ -63,4 +63,11 @@ button.analyze-button {
 
 button:focus {
     outline: 0;
+}
+
+.modelDetails {
+    width: 40vw;
+    margin: auto;
+    width: 50%;
+    margin-top: 15px;
 }
