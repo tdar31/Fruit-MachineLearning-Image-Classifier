@@ -1,6 +1,6 @@
 body {
-    background-color: #c5c5c5;
-    background-image: url("../view/interlaced.png");
+    background-color: #ffffff;
+    /* background-image: url("../view/interlaced.png"); */
     font-family: "Blinker", sans-serif;
 }
 
@@ -39,6 +39,7 @@ body {
     margin-top: 0.5em;
     padding: 10px;
     font-size: 13px;
+    color: black;
 }
 
 button.choose-file-button {
