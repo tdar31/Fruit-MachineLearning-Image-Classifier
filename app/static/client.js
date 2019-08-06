@@ -15,14 +15,19 @@ function showPicked(input) {
 }
 
 function analyze() {
+
+  var urlValue = document.getElementById('textbox_id').value
   var uploadFiles = el("file-input").files;
   if (uploadFiles.length !== 1) alert("Please select a file to analyze!");
 
   el("analyze-button").innerHTML = "Analyzing...";
   var xhr = new XMLHttpRequest();
   var loc = window.location;
-  xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`,
+  // xhr.open("POST", `${loc.protocol}//${loc.hostname}:${loc.port}/analyze`,
+  //   true);
+  xhr.open("POST", `https://sites.google.com/site/knowyourfruit/_/rsrc/1284636557816/know-your-apples/Apple%2002.jpg?height=362&width=400`,
     true);
+    // https://sites.google.com/site/knowyourfruit/_/rsrc/1284636557816/know-your-apples/Apple%2002.jpg?height=362&width=400
   xhr.onerror = function() {
     alert(xhr.responseText);
   };
