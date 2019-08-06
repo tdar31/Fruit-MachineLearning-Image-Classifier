@@ -12,7 +12,6 @@ from starlette.staticfiles import StaticFiles
 export_file_url = 'https://drive.google.com/uc?export=download&id=1dr8_cjP-w1MT2q8FmVypPMsmiisLypmI'
 export_file_name = 'export.pkl'
 
-# classes = ['black', 'grizzly', 'teddys']
 classes = ['apple','apricot','banana', 'blackberry', 'blueberry', 'cantaloupe', 'cherry', 'cloudberry', 'coconut', 'cucumber', 'date', 'dragonfruit', 'durian', 'fig', 'grape', 'grapefruit', 'honeyberry', 'honeydew', 'kiwi', 'kumquat', 'lemon', 'lime', 'mango', 'orange', 'papaya','passionfruit', 'peach','pear', 'pineapple', 'plum', 'pomegranate', 'raspberry', 'strawberry', 'watermelon' ]
 path = Path(__file__).parent
 
@@ -38,7 +37,7 @@ async def setup_learner():
     except RuntimeError as e:
         if len(e.args) > 0 and 'CPU-only machine' in e.args[0]:
             print(e)
-            message = "\n\nThis model was trained with an old version of fastai and will not work in a CPU environment.\n\nPlease update the fastai library in your training environment and export your model again.\n\nSee instructions for 'Returning to work' at https://course.fast.ai."
+            message = "\n\nThis model will not work in a CPU environment"
             raise RuntimeError(message)
         else:
             raise
