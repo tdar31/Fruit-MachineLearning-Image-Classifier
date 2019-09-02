@@ -16,5 +16,5 @@ Notable issues with the current model
 
 - Fruits that come in different shades of color (i.e Green Apples and Red Apples)
 
-- Differenciating fruits that have been cut open versus pre harvested state (i.e unopened Honeydew and Cantaloupe versus when they are cut open)
+- Differentiating fruits that have been cut open versus pre harvested state (i.e unopened Honeydew and Cantaloupe versus when they are cut open)
 
