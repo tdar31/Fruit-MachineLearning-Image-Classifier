@@ -1,6 +1,6 @@
-# Fruit-MachineLearning-Image-Classifer
+# Fruit-MachineLearning-Image-Classifier
 
-Fruit-MachineLearning-Image-Classifer
+Fruit-MachineLearning-Image-Classifier
 
 https://fruit-image-classifer.onrender.com/
 
